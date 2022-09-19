@@ -1,11 +1,12 @@
 import React from 'react'
+import ProgressBar from './ProgressBar'
 
 const SellotapeQuestion = ({sellotapeInput, onSellotapeInputChange, onStepChange, onStepMinusChange}) => {
     return (
-        <div className="container-bubbles">
+       <div>
+         <div className="container-bubbles">
          <img src= "/assets/bubbles.jpg" alt = "child who asked the question"/>
-        <fieldset className="fieldset">
-           <legend className="legend" >Questions by Bella + Bubbles</legend>
+       
              <form className="form-container">
                 <label className="label" htmlFor = "sellotapeInput">How do they make Sellotape so sticky?</label>
                   <textarea 
@@ -21,9 +22,14 @@ const SellotapeQuestion = ({sellotapeInput, onSellotapeInputChange, onStepChange
                 <button className="button" onClick = {onStepMinusChange}> Previous Question</button>
             </form>
               
-        </fieldset>
+  
         </div>
+        <div ClassName="progress"><ProgressBar
+        bgcolor="#86E5D1" 
+        progress='75'  
+        height={50}/></div>
         
+       </div>
     )
 }
 export default SellotapeQuestion

@@ -1,6 +1,5 @@
 import React, { useState} from 'react'
 
-import ProgressBar from './ProgressBar'
 
 import FirstPage from './FirstPage'
 import NameQuestion from './NameQuestion'
@@ -14,6 +13,8 @@ import { Overview } from './Overview'
 
   export const Form = () => {
   
+  //names of state properties.... const[name, function to update state property] = useState(''). Called useState because it is a function and needs to be called. 
+  //('') is the default value
   const [nameInput, setNameInput] = useState ('');
   const [locationInput, setLocationInput] = useState ('')
   const [animalInput, setAnimalInput] = useState ('')
@@ -73,7 +74,7 @@ import { Overview } from './Overview'
     )
   } else if (step === 3) {
     return (
-      <div ClassName="body-container">
+     
         <div className="main"> 
         <LocationQuestion 
         locationInput={locationInput} 
@@ -81,17 +82,12 @@ import { Overview } from './Overview'
         onStepChange={onStepChange}
         onStepMinusChange={onStepMinusChange}
         /></div> 
-          <div ClassName="progress"><ProgressBar
-          bgcolor="#86E5D1" 
-          progress='15'  
-          height={50}/></div>
-      </div>
-      
+          
     )
     
   } else if (step === 4) {
     return ( 
-    <div ClassName="body-container">
+   
       <div className="main"> 
       <FavouriteAnimal
       animalInput={animalInput}
@@ -99,15 +95,12 @@ import { Overview } from './Overview'
       onStepChange={onStepChange}
       onStepMinusChange={onStepMinusChange}
       /></div>
-      <div ClassName="progress"><ProgressBar
-      bgcolor="#86E5D1" 
-      progress='30'  
-      height={50}/></div>
-      </div>
+      
+     
     )
   } else if (step === 5) {
     return (
-      <div ClassName="body-container">
+     
       <div className = "main"> 
       <FavouriteColour 
       colourInput={colourInput}
@@ -115,15 +108,11 @@ import { Overview } from './Overview'
       onStepChange={onStepChange}
       onStepMinusChange={onStepMinusChange}
       /></div>
-      <div ClassName="progress"><ProgressBar
-      bgcolor="#86E5D1" 
-      progress='45'  
-      height={50}/></div>
-    </div>
+   
     )
   } else if (step === 6) {
     return (
-      <div ClassName="body-container">
+     
       <div className="main"> 
       <AeroplaneQuestion 
       aeroplaneInput={aeroplaneInput}
@@ -131,15 +120,11 @@ import { Overview } from './Overview'
       onStepChange={onStepChange}
       onStepMinusChange={onStepMinusChange}
       /></div>
-      <div ClassName="progress"><ProgressBar
-      bgcolor="#86E5D1" 
-      progress='60'  
-      height={50}/></div>
-      </div>
+     
     )
   } else if (step === 7) {
     return (
-      <div ClassName="body-container">
+     
       <div className="main"> 
       <OlderQuestion 
       olderInput={olderInput}
@@ -147,15 +132,12 @@ import { Overview } from './Overview'
       onStepChange={onStepChange}
       onStepMinusChange={onStepMinusChange}
       /></div>
-      <div ClassName="progress"><ProgressBar
-      bgcolor="#86E5D1" 
-      progress='75'  
-      height={50}/></div>
-      </div>
+  
+     
     )
   } else if (step === 8) {
     return (
-      <div ClassName="body-container">
+      
       <div className="main"> 
       <SellotapeQuestion 
       sellotapeInput={sellotapeInput}
@@ -163,15 +145,11 @@ import { Overview } from './Overview'
       onStepChange={onStepChange}
       onStepMinusChange={onStepMinusChange}
       /></div>
-      <div ClassName="progress"><ProgressBar
-      bgcolor="#86E5D1" 
-      progress='90'  
-      height={50}/></div>
-      </div>
+   
     )
   } else if (step === 9) {
     return (
-      <div ClassName="body-container">
+     
       <div className="main"> 
       <Overview
       nameInput={nameInput}
@@ -182,11 +160,8 @@ import { Overview } from './Overview'
       olderInput={olderInput}
       sellotapeInput={sellotapeInput}
       /></div>
-      <div ClassName="progress"><ProgressBar
-      bgcolor="#86E5D1" 
-      progress='100'  
-      height={50}/></div>
-      </div>
+      
+   
     )
   }
  

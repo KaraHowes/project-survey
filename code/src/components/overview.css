@@ -3,16 +3,9 @@
     display: flex;
     flex-direction: column;
   }
-  .overview {
-    width: 90%;
-    line-height: 20px;
-    min-width: 275px;
-  }
-  
-  .overview p {
-    margin: 6px;
-  }
-  .overview p span {
+
+ 
+  .thank-you p span {
     font-weight: 800;
   }
   

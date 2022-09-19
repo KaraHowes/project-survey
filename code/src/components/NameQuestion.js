@@ -5,8 +5,7 @@ const NameQuestion = ( {nameInput, onNameInputChange, onStepChange, onStepMinusC
     return (
        <div className="container-bella">
         <img src= "/assets/bella.jpg" alt = "child who asked the question"/>
-        <fieldset className="fieldset">
-           <legend className="legend" >Questions by Bella + Bubbles</legend>
+        
              <form className="form-container">
                 <label className="label" htmlFor="nameInput">What is your name?</label>
                   <input 
@@ -21,7 +20,7 @@ const NameQuestion = ( {nameInput, onNameInputChange, onStepChange, onStepMinusC
                 <button className="button" onClick = {onStepMinusChange}> Previous Question</button>
             </form>
               
-        </fieldset>
+      
        </div>
         
     )

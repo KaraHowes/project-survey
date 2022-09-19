@@ -1,13 +1,13 @@
 import React from 'react'
+import ProgressBar from './ProgressBar'
 import './aero-radio.css'
 
 const AeroplaneQuestion = ({onAeroplaneInputChange, onStepChange, onStepMinusChange}) => { 
 
     return(
-       <div className="container-bubbles">
+       <div>
+           <div className="container-bubbles">
            <img src="/assets/bubbles.jpg" alt = "child who asked the question"/>
-            <fieldset className="fieldset">
-           <legend className="legend" >Questions by Bella + Bubbles</legend>
             <form className="form-container">
               <div className="radioColumn">
                 <h2>Can you make an aeroplane out of paper?</h2>
@@ -37,7 +37,12 @@ const AeroplaneQuestion = ({onAeroplaneInputChange, onStepChange, onStepMinusCha
             <button className="button" onClick = {onStepChange}>Next Question</button>
             <button className="button" onClick = {onStepMinusChange}> Previous Question</button>
         </form>
-        </fieldset>
+       
+       </div>
+       <div ClassName="progress"><ProgressBar
+       bgcolor="#86E5D1" 
+       progress='60'  
+       height={50}/></div>
        </div>
     )
 }

@@ -1,8 +1,10 @@
 import React from 'react'
 import AnimalChoices from './AnimalChoices'
+import ProgressBar from './ProgressBar'
 import './overview.css'
 import useWindowSize from 'react-use-window-size'
 import Confetti from 'react-confetti'
+
 
 export const Overview = ({ nameInput, locationInput, animalInput, colourInput, aeroplaneInput, olderInput, sellotapeInput }) => {
   const { width, height } = useWindowSize()
@@ -11,38 +13,29 @@ export const Overview = ({ nameInput, locationInput, animalInput, colourInput, a
     <section className="overview-all">
       <Confetti
         width={width}
-        height={3000}
+       
         colors={['#feaeb9', '#a49262', '#86e5d1','#c3a2db']}
         gravity={0.08}
         numberOfPieces={350}
       />
-      <fieldset className="fieldset">
-        <legend className="legend">The Overview</legend>
-        <form className="form-container">
-          <section className="overview">
-            <p> Your name: <span>{nameInput}</span></p>
-            <p> Your location: <span>{locationInput}</span></p>
-            <p> Your favourite chosen animal: <span>{animalInput} </span></p>
-            <p> Your favourite colour: <span class="colour">{colourInput}</span></p>
-            <p> Can you make an aeroplane out of paper?: <span>{aeroplaneInput}</span></p>
-            <p> Future profession: <span>{olderInput}</span></p>
-            <p class="sellotape-overview"> Sellotape solution: <span>{sellotapeInput}</span></p>
-          </section>
-        </form>
-
-      </fieldset>
-
+    
       <div className="animal">
         <AnimalChoices
           animalInput={animalInput} />
       </div>
       <div className="thank-you">
-        <h1> THANK YOU!</h1>
-        <p>Thank you so much for taking time to answer our questions! We always have so many
-        questions and it is great that you answered some for us. And here is a picture of your favourite animal!
+        <h1> Thank you {nameInput}!</h1>
+        <p> We hope you love living in <span>{locationInput}</span> and think your favourite colour of <span>{colourInput}</span> is an awesome choice.
+  We think you would make an amazing <span>{olderInput}</span> and had no idea that <span>{sellotapeInput}</span> was how they made sellotape. We hope you like
+  this image of <span>{animalInput}</span>, your favourite animal.
           </p>
 
       </div>
+
+      <div ClassName="progress"><ProgressBar
+      bgcolor="#86E5D1" 
+      progress='100'  
+      height={50}/></div>
     </section>
   )
 }

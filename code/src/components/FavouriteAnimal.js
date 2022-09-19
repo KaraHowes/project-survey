@@ -1,37 +1,62 @@
-import React from 'react'
+import React from "react";
+import ProgressBar from "./ProgressBar";
 
 const FavouriteAnimal = ({animalInput, onAnimalInputChange, onStepChange, onStepMinusChange}) => {
-    return (
-        <div className="container-bubbles">
-           <img src= "/assets/bubbles.jpg" alt="child who asked the question"/>
-            <fieldset className="fieldset">
-            <legend className="legend" >Questions by Bella + Bubbles</legend>
+  return (
+    <div>
+      <div className="container-bubbles">
+        <img src="/assets/bubbles.jpg" alt="child who asked the question" />
+        <form className="form-container">
+          <label className="label" htmlFor="animalInput">
+            Favourite animal?
+          </label>
+          <select
+            className="input"
+            id="animalInput"
+            value={animalInput}
+            onChange={onAnimalInputChange}
+          >
+            <option disabled value="">
+              Select an option:
+            </option>
+            <option value="Dolphin" selected>
+              Dolphin
+            </option>
+            <option value="Tiger" selected>
+              Tiger
+            </option>
+            <option value="Koala" selected>
+              Koala
+            </option>
+            <option value="Unicorn" selected>
+              Unicorn
+            </option>
+            <option value="Shark" selected>
+              Shark
+            </option>
+            <option value="Penguin" selected>
+              Penguin
+            </option>
+          </select>
 
-            <form className="form-container">
-            <label className="label"htmlFor="animalInput">Which of these animals do you like the best?</label>
-            <select 
-                className="input"
-                id="animalInput"
-                value={animalInput} 
-                onChange={onAnimalInputChange}>
-                    <option disabled value=''>Select an option:</option>
-                    <option value="Dolphin" selected>Dolphin</option>
-                    <option value="Tiger" selected>Tiger</option>
-                    <option value="Koala" selected>Koala</option>
-                    <option value="Unicorn" selected>Unicorn</option>
-                    <option value="Shark" selected>Shark</option>
-                    <option value="Penguin" selected>Penguin</option>
-                </select>
-                
-            <button disabled={animalInput === ''} className="button" onClick = {onStepChange}>Next Question</button>
-            <button className="button" onClick = {onStepMinusChange}> Previous Question</button>
-            </form>
-        </fieldset>
-        </div>
-        
-        
-    
-    )
-}
+          <button
+            disabled={animalInput === ""}
+            className="button"
+            onClick={onStepChange}
+          >
+            Next Question
+          </button>
+          <button className="button" onClick={onStepMinusChange}>
+            {" "}
+            Previous Question
+          </button>
+        </form>
+      </div>
+      <div ClassName="progress">
+        <ProgressBar bgcolor="#86E5D1" progress="30" height={50} />
+      </div>
+    </div>
+  );
+};
 
-export default FavouriteAnimal
+export default FavouriteAnimal;

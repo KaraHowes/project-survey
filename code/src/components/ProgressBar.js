@@ -3,9 +3,9 @@ import React from 'react'
 const ProgressBar = ({bgcolor,progress,height}) => {
     const parentdiv = {
         height: height,
-        width: '90%',
+        width: '100%',
         backgroundColor: 'whitesmoke',
-        borderRadius: 40,
+        borderRadius: 20,
         margin: 50
       }
       
@@ -13,7 +13,7 @@ const ProgressBar = ({bgcolor,progress,height}) => {
         height: '100%',
         width: `${progress}%`,
         backgroundColor: bgcolor,
-       borderRadius:40,
+       borderRadius:20,
         textAlign: 'right'
         
       }
