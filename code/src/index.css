@@ -108,6 +108,7 @@ code {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  align-items: center;
 }
 
 .container-bella img {
@@ -156,11 +157,13 @@ margin: 0 auto 50px auto;
   font-weight: bold;
   display: block;
   font-family: 'Courier Prime', monospace;
-  margin-bottom: 30px;
+  margin: 0 auto 10px auto;
   padding-bottom: 5px;
   text-decoration: underline;
   text-decoration-color: #F675A8;
   text-decoration-thickness: 5px;
+ 
+ 
 
 }
 
@@ -172,11 +175,10 @@ margin: 0 auto 50px auto;
   display: block;
   box-sizing: border-box;
   border-radius: 5px;
-  font-family: helvetica;
+  font-family: 'Raleway', sans-serif;
   font-size: 16px;
   color: #808080;
-  font-family: 'Nunito';
-  font-weight: 800;
+  font-weight: 700;
 }
 .button {
   border: 3px solid black;
@@ -201,7 +203,7 @@ margin: 0 auto 50px auto;
 /* Text area*/
 
 .textarea {
-  width: 390px;
+  width: 100%;
   height: 112px;
   border: 1px solid #d8d8d8;
   font-family: helvetica; 
@@ -209,6 +211,7 @@ margin: 0 auto 50px auto;
   padding: 10px 15px;
   margin: 0 0 20px;
   border-radius: 5px;
+  align-items: center;
 }
 .progress {
   display: flex;

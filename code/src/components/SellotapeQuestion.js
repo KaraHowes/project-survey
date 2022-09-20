@@ -25,7 +25,7 @@ const SellotapeQuestion = ({sellotapeInput, onSellotapeInputChange, onStepChange
   
         </div>
         <div ClassName="progress"><ProgressBar
-        bgcolor="#37E6EB" 
+        bgcolor="#F675A8" 
         progress='100'  
         height={50}/></div>
         

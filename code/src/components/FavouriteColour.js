@@ -29,7 +29,7 @@ const FavouriteColour = ({colourInput, onColourInputChange, onStepChange, onStep
           
         </div>
         <div ClassName="progress">
-            <ProgressBar bgcolor="#37E6EB" progress="60" height={50} />
+            <ProgressBar bgcolor="#878DF7" progress="60" height={50} />
           </div>
       </div>
     );
