@@ -1,6 +1,6 @@
 import React from 'react'
 import AnimalChoices from './AnimalChoices'
-import ProgressBar from './ProgressBar'
+
 import './overview.css'
 import useWindowSize from 'react-use-window-size'
 import Confetti from 'react-confetti'
@@ -32,10 +32,7 @@ export const Overview = ({ nameInput, locationInput, animalInput, colourInput, a
 
       </div>
 
-      <div ClassName="progress"><ProgressBar
-      bgcolor="#86E5D1" 
-      progress='100'  
-      height={50}/></div>
+  
     </section>
   )
 }

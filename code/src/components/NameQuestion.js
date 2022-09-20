@@ -1,9 +1,11 @@
 import React from 'react'
+import ProgressBar from "./ProgressBar";
 
 const NameQuestion = ( {nameInput, onNameInputChange, onStepChange, onStepMinusChange}) => {
 
     return (
-       <div className="container-bella">
+      <div>
+<div className="container-bella">
         <img src= "/assets/bella.jpg" alt = "child who asked the question"/>
         
              <form className="form-container">
@@ -22,6 +24,11 @@ const NameQuestion = ( {nameInput, onNameInputChange, onStepChange, onStepMinusC
               
       
        </div>
+       <div ClassName="progress">
+        <ProgressBar bgcolor="#37E6EB" progress="15" height={50} />
+      </div>
+      </div>
+       
         
     )
 }

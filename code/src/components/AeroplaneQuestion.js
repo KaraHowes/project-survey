@@ -10,7 +10,7 @@ const AeroplaneQuestion = ({onAeroplaneInputChange, onStepChange, onStepMinusCha
            <img src="/assets/bubbles.jpg" alt = "child who asked the question"/>
             <form className="form-container">
               <div className="radioColumn">
-                <h2>Can you make an aeroplane out of paper?</h2>
+                <p>Can you make a paper aeroplane?</p>
                 <div className="radioRow"> 
                     <label className="radiobutton-label"htmlFor="aeroplaneInput">Yes
                         <input 
@@ -34,14 +34,14 @@ const AeroplaneQuestion = ({onAeroplaneInputChange, onStepChange, onStepMinusCha
                 </div>  
                </div>
              
-            <button className="button" onClick = {onStepChange}>Next Question</button>
+            <button className="button" onClick = {onStepChange}>Next Question </button>
             <button className="button" onClick = {onStepMinusChange}> Previous Question</button>
         </form>
        
        </div>
        <div ClassName="progress"><ProgressBar
-       bgcolor="#86E5D1" 
-       progress='60'  
+       bgcolor="#37E6EB" 
+       progress='75'  
        height={50}/></div>
        </div>
     )

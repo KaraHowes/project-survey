@@ -28,7 +28,7 @@ return (
         </form>
       </div>
       <div ClassName="progress">
-        <ProgressBar bgcolor="#86E5D1" progress="15" height={50} />
+        <ProgressBar bgcolor="#37E6EB" progress="30" height={50} />
       </div>
     </div>
   );

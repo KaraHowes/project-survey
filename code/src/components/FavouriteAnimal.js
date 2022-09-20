@@ -53,7 +53,7 @@ const FavouriteAnimal = ({animalInput, onAnimalInputChange, onStepChange, onStep
         </form>
       </div>
       <div ClassName="progress">
-        <ProgressBar bgcolor="#86E5D1" progress="30" height={50} />
+        <ProgressBar bgcolor="#37E6EB" progress="45" height={50} />
       </div>
     </div>
   );
