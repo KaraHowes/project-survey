@@ -151,7 +151,6 @@ margin: 0 auto 50px auto;
    
 }
 
-
 .label, .radioColumn p{
   font-size: 1.5rem;
   font-weight: bold;
@@ -162,9 +161,6 @@ margin: 0 auto 50px auto;
   text-decoration: underline;
   text-decoration-color: #F675A8;
   text-decoration-thickness: 5px;
- 
- 
-
 }
 
 .input {
@@ -195,8 +191,8 @@ margin: 0 auto 50px auto;
 }
 .button:hover{
   background-color: #F9A7C4;
+  border: 3px solid #F9A7C4;
   color: white;
-  border: 1px solid #F9A7C4
 }
 
 
