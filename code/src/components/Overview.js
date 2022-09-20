@@ -7,7 +7,7 @@ import Confetti from 'react-confetti'
 
 
 export const Overview = ({ nameInput, locationInput, animalInput, colourInput, aeroplaneInput, olderInput, sellotapeInput }) => {
-  const { width, height } = useWindowSize()
+  const { width } = useWindowSize()
   return (
 
     <section className="overview-all">
